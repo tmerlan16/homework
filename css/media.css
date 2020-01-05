@@ -1,15 +1,24 @@
-@media screen and (max-width: 768px) {
-        .resume{
-            width: 500px;
-            height: 700px;
-        }
-        .media-s{
-        width: 500px;
-        height: 420px;
+@media screen and (max-width: 568px) {
+    #AboutMe{
+        padding: 0;
     }
 
+        .resume{
+            width: 320px;
+            height: 767px;
+        }
+        .media-s{
+            height: 250px;
+        }
+
         .codexample {
-             width: 470px;
-             height: 400px;
+             width: 300px;
+             height: 250px;
+        }
+
+        #skill{
+            margin-top: 140px;
+            padding: 0;
+            height: 400px;
         }
 }
