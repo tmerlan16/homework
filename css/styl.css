@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.titles{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 44px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+
+}
+.titles span{
+    font-weight: 600;
+}
+.titles:before,
+.titles:after{
+    position: absolute;
+    content: '';
+    background: #f1a542;
+    height: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.titles:before{
+    width: 100px;
+    bottom: -20px;
+}
+.titles:after{
+    width: 70px;
+    bottom: -30px;
+
+}
+header{
+    position: absolute;
+    width: 100%;
+    top: 20px ;
+    font-family: "Lato",sans-serif;
+    z-index: 2;
+}
+.navSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    transition: .4s;
+
+}
+/*####################################Burger_menu############################*/
+/*####################################Burger_menu############################*/
+.burger-menu{
+    float: right;
+    
+}
+.burger-menu_button{
+    position: fixed;
+    right:5px;
+    top: 20px;
+}
+.burger-menu_button span{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #b2b2b2;
+
+}
+.burger-menu_button span:before,
+.burger-menu_button span:after{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #b2b2b2;
+}
+.burger-menu_button span:before {
+    top: 10px;
+    left: 0;
+}
+.burger-menu_button span:after{
+    top: -10px;
+    left: 0;
+}
+.menu-active span:before{
+    transform: rotate(45deg);
+}
+.menu-active span:after{
+    transform: rotate(-45deg);
+}
+
+/*####################################Burger_menu############################*/
+/*####################################Burger_menu############################*/
+.menu li:hover{
+    border-bottom: 1px solid #f1a542;
+
+
+
+}
+.menu-item{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+/*###########hero#####################*/
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+}
+.hero-content{
+    padding-top: 280px;
+    text-align: center;
+
+}
+.hero-title{
+    color: #999999;
+    font-size: 44px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.hero-title span{
+    color: #f1a542;
+}
+.hero-description{
+    color:white;
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 20px;
+}
+.slick-btn{
+    display: inline-block;
+    margin-top: 190px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding-top: 5px;
+    transition: .4s;
+
+}
+.slick-btn:hover{
+    background: #f1a542;
+}
+/*###########hero#####################*/
+/*##############About-Us#####################*/
+#About-Us{
+    height: 610px;
+    background: #fff;
+    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.About-Us__subtitle{
+    color: #636363;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.About-Us__title{
+    position: relative;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0 60px 0;
+}
+.About-Us__title:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #fcac45;
+    bottom: -20px;
+}
+.About-Us__title span{
+    font-weight: 700;
+}
+.About-Us__title_description{
+    font-size: 18px;
+    color: #6c6c6c;
+}
+.About-Us__list{
+    font-family: 'Open Sans', sans-serif;
+    color: #6c6c6c;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.btn{
+    width: 195px;
+    height: 45px;
+    border: 1px solid #6c6c6c;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c6c6c;
+}
+.fa-briefcase{
+    padding: 5px;
+}
+
+
+/*##############About-Us#####################*/
+/*##############Our-team#####################*/
+#Our-team{
+    height: 690px;
+    background: #070707;
+    color: white;
+}
+.Our-team_img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.Our-team_title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 8px 0;
+
+}
+.Our-team_subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.Our-team_description{
+    font-size: 14px;
+}
+.Our-team_content{
+    margin-top: 130px;
+}
+/*##############Our-team#####################*/
+/*##############Services#####################*/
+#services{
+    height: 600px;
+    color: black;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.services_description{
+    font-style: italic;
+    color: #767676;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
+}
+.services_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fcac45;
+    margin: auto;
+}
+.services_title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+.services__title_description{
+    font-size: 14px;
+    color: black;
+}
+/*##############Services#####################*/
+/*##############Clients#####################*/
+#clients{
+    height: 500px;
+    background: black;
+    color: white;
+}
+.clients-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 100px auto;
+}
+.clients-list li{
+    margin: 20px;
+}
+/*##############Clients#####################*/
+/*##################testimonials#################*/
+#testimonials{
+    height: 1200px;
+    background: white;
+}
+.testimonials_slide{
+    position: relative;
+    overflow: hidden;
+
+}
+.testimonials_overlay{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.testimonials_slide:hover .testimonials_overlay{
+    top: 0 ;
+    background: #222222;
+}
+.testimonials__overlay_title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+}
+.testimonials__overlay_subtitle{
+    font-size: 14px;
+    color: #b2b2b2;
+
+}
+.testimonials_search{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fcac45;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.testimonials_search:before,
+.testimonials_search:after{
+    content: '';
+    position: absolute;
+    
+
+}
+.testimonials_search:after{
+    width: 30px;
+    height: 1px;
+    background: #fcac45;
+    top: 19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.testimonials_search:before{
+    width: 1px;
+    height: 30px;
+    background: #fcac45;
+    top: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+.tabs input{
+    display: none;
+}
+.tab {
+    display: none;
+    clear: both;
+}
+#tab1:checked ~ .tab1,
+#tab2:checked ~ .tab2,
+#tab3:checked ~ .tab3,
+#tab3:checked ~ .tab4{
+    display: block;
+}
+.tabs input:checked + label{
+    color: red;
+}
+.tabs label{
+    float: right;
+    border-left: 1px solid black;
+}
+.tab_input {
+    text-align: center;
+    padding: 10px;
+    transition: .4s;
+}
+.tab_input:first-child{
+    margin-right: 500px;
+}
+.tab_input:hover{
+    background: #fcac45;
+
+}
+/*##################testimonials#################*/
+/*##################work#################*/
+#work{
+    height: 600px;
+    background: #000000;
+    color: white;
+}
+.work_description{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    color: #b2b2b2;
+}
+.work_subtitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 80px;
+    text-align: center;
+    color: #b2b2b2;
+}
+.work_subtitle span{
+    font-weight: 300;
+}
+/*##################work#################*/
+/*##################contact-us#################*/
+#contact-us{
+    margin: auto;
+    width: 750px;
+    height: 700px;
+    background: #ffffff;
+    color: black;
+}
+.contact-us_input__name{
+    font-size: 18px;
+}
+.message{
+    width:100%;
+}
+.contact-us_input__name span{
+    color: red;
+}
+.contact-us_input {
+    width: 100%;
+    height: 45px;
+}
+.btn_send{
+    width: 160px;
+    height: 40px;
+    background: #fcac45;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: .3s;
+    float: right;
+    
+}
+.btn_send:hover{
+    background: #4b8090;
+
+}
+/*##################footer#################*/
+/*##################footer#################*/
+#footer{
+    font-family: 'Open Sans', sans-serif;
+    background: #222222;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+.footer-title span{
+    font-weight: 600;
+}
+.footer-icons{
+    display: flex;
+    list-style: none;
+}
+.footer-icons .footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #b2b2b2 ;
+
+}
+.footer-items i {
+    color: #b2b2b2;
+    margin-left: 6px;
+}
+
+/*##################footer#################*/

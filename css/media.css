@@ -1,0 +1,23 @@
+@media (max-width: 992px) {
+    .menu{
+        display: none;
+    }
+    .burger-menu_button{
+        display: block;
+    }
+
+
+
+    #About-Us{
+        height: 1100px;
+    }
+    #services{
+        height: 700px;
+    }
+    #testimonials{
+        height: 2000px;
+    }
+    #contact-us{
+        height: 900px;
+    }
+}
